@@ -24,5 +24,3 @@ Confiabilidade e segurança: O projeto utiliza tecnologias avançadas para garan
 Economia de tempo e esforço: Ao automatizar o processo de detecção e notificação, o projeto reduz consideravelmente a necessidade de monitoramento manual constante, permitindo que os usuários economizem tempo e concentrem-se em outras tarefas importantes.
 
 Personalização e escalabilidade: Com a capacidade de personalizar as notificações e gerenciar um número variado de certificados, o projeto é flexível e pode ser facilmente adaptado para atender às necessidades de diferentes clientes e empresas, independentemente do tamanho ou setor de atuação.
-
-Se você está buscando uma solução confiável e eficiente para gerenciar seus certificados digitais, o projeto de Detecção de Vencimento de Certificado Digital com Notificações por Email é a escolha ideal. Mantenha-se informado e protegido contra a expiração de certificados, garantindo a continuidade dos seus negócios online.
