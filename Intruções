@@ -1,0 +1,59 @@
+Há duas formas de tornar a execução totalmente automática, sem que vc precise colocar o código pra executar
+Pode-se adicionar uma tarefa agendada no windows que rode o código automaticamente, segue intruções:
+    Passo 1: Crie um arquivo de script Python
+    Crie um arquivo Python com o código que você deseja executar. Certifique-se de que o arquivo está localizado em um diretório acessível.
+
+    Passo 2: Abra o Agendador de Tarefas do Windows
+    Pressione "Win + R" para abrir o "Executar", digite "taskschd.msc" e pressione Enter para abrir o Agendador de Tarefas do Windows.
+
+    Passo 3: Crie uma nova tarefa
+    No Agendador de Tarefas, clique com o botão direito em "Biblioteca do Agendador de Tarefas" e selecione "Criar Tarefa".
+
+    Passo 4: Configure a tarefa
+
+    Na guia "Geral", forneça um nome para a tarefa e, opcionalmente, uma descrição.
+    Na guia "Acionadores", clique em "Novo" para adicionar um novo acionador.
+    Selecione "Iniciar uma vez" ou "Diariamente" (ou outra opção de acordo com sua preferência).
+    Configure o horário e a data de início desejados.
+    Clique em "OK" para salvar o acionador.
+    Na guia "Ações", clique em "Novo" para adicionar uma nova ação.
+    No campo "Programa/script", insira o caminho completo para o interpretador Python (por exemplo, "C:\Python\python.exe").
+    No campo "Argumentos", insira o caminho completo para o arquivo do seu script Python (por exemplo, "C:\Caminho\para\seu\script.py").
+    Clique em "OK" para salvar a ação.
+    Configure outras opções desejadas nas guias restantes, como "Condições", "Configurações" e "Histórico".
+    Passo 5: Salve a tarefa
+    Clique em "OK" para salvar a tarefa agendada.
+
+    Agora, a tarefa agendada foi configurada para executar o código Python de acordo com as configurações especificadas. Certifique-se de que o caminho para o interpretador Python e o arquivo do script estejam corretos nas configurações da tarefa.
+
+    O Agendador de Tarefas do Windows será responsável por executar o código Python no horário agendado.
+  
+Também pode adicionar o código python a tarefas que executam quando o computador incia, segue instruções:
+
+    Para adicionar a execução de um código Python à inicialização do Windows, você pode seguir estes passos:
+
+    Passo 1: Crie um arquivo de script Python
+    Crie um arquivo Python com o código que você deseja executar na inicialização. Certifique-se de que o arquivo está localizado em um diretório acessível.
+
+    Passo 2: Abra o Editor de Registro do Windows
+    Pressione "Win + R" para abrir o "Executar", digite "regedit" e pressione Enter para abrir o Editor de Registro do Windows.
+
+    Passo 3: Navegue até a chave de execução
+    No Editor de Registro, navegue até a seguinte chave:
+    HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run
+
+    Passo 4: Adicione uma entrada para o script Python
+    Clique com o botão direito do mouse na chave "Run" e selecione "Novo -> Valor da Sequência de Caracteres".
+
+    Passo 5: Configure a entrada
+
+    Dê um nome à entrada (por exemplo, "MeuScript").
+    No campo "Dados do Valor", insira o caminho completo para o interpretador Python seguido do caminho completo para o arquivo do seu script Python (por exemplo, "C:\Python\python.exe C:\Caminho\para\seu\script.py").
+    Passo 6: Salve as alterações e reinicie o computador
+    Clique em "OK" para salvar a entrada no registro. Reinicie o computador para que as alterações tenham efeito.
+
+    Após reiniciar o computador, o interpretador Python será iniciado automaticamente e seu script será executado.
+
+    Certifique-se de que o Python esteja instalado corretamente e que os caminhos para o interpretador Python e o arquivo do script estejam corretos na entrada do registro.
+
+    Lembre-se de que a adição de entradas no registro do sistema pode afetar o desempenho e a estabilidade do seu sistema operacional. Portanto, tenha cuidado ao fazer alterações no registro e verifique se o seu script não causa problemas ou conflitos.
